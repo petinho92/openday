@@ -41,8 +41,8 @@ class EmailSender extends CliModule
 
                     foreach ($data as $email){
                         $mail->clearAddresses();;
-//                        $mail->addAddress($email->toEmail, $email->toName);
-                        $mail->addAddress('petinho92@gmail.com', $email->toName);
+                        $mail->addAddress($email->toEmail, $email->toName);
+//                        $mail->addAddress('petinho92@gmail.com', $email->toName);
                         $mail->msgHTML($email->toContent);
                         $mail->setFrom('noreply@mik.pte.hu');
                         $mail->Subject = 'MIK Nyílt Nap Regisztráció';
