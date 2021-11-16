@@ -2,20 +2,13 @@
     import {Button} from 'svelma';
     export let section;
     export let sectionName;
-    // export let place;
-    // export let leader;
     let expanded = false
 </script>
 
 <div class="collapsible">
     <div class="notification headercolor" aria-expanded={expanded} on:click={() => expanded = !expanded}>
         <span class="is-size-5">{section}</span>: <b>{sectionName}</b><br />
-<!--        Terem: <b>{place}</b><br/>-->
-<!--        Szekció vezető elnök: <b>{leader}</b>-->
     </div>
-
-    <h3>
-    </h3>
 
     <div class='contents' hidden={!expanded}>
         <slot></slot>

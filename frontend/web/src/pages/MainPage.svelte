@@ -32,7 +32,7 @@
                     <h2 class="subtitled subtitle">
                         A Nyílt Napok állandó részét képezik a képzésekkel, felvételi eljárással, pontszámítással
                         kapcsolatos tájékoztatók, valamint számos kutató laborba engedünk betekintést.<br><br>
-                        2021.12.03.-án 8:30-tól az Aulában veszi kezdetét a regisztráció, mely után folyamatos
+                        2021.12.03-án 8:30-tól az Aulában veszi kezdetét a regisztráció, mely után folyamatos
                         programokkal várunk minden kedves látogatót.
                     </h2>
                     <div>
@@ -49,18 +49,3 @@
         </div>
     </div>
 </section>
-
-
-<style lang="css">
-    .bgcolor {
-        /*background-image: url("/~web/images/bg.jpg");*/
-        /*background-repeat: no-repeat;*/
-        /*background-attachment: fixed;*/
-        /*background-size: cover;*/
-    }
-
-    .link {
-        color: #3498db;
-        text-decoration: underline;
-    }
-</style>

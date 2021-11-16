@@ -24,7 +24,7 @@
             </a>
             <a class="navbar-item linkcolor"
                on:click={ () => push("/student")}>
-                Hallgatóknak
+                Diákoknak
             </a>
             <a class="navbar-item linkcolor"
                on:click={ () => push("/guest")}>

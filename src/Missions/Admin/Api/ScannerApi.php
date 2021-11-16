@@ -4,7 +4,6 @@ use Application\Missions\Admin\Services\QRService;
 use Atomino\Mercury\Responder\Api\Api;
 use Atomino\Mercury\Responder\Api\Attributes\Route;
 
-use function Atomino\debug;
 
 
 class ScannerApi extends Api{
@@ -17,7 +16,6 @@ class ScannerApi extends Api{
     public function processingQR()
     {
         if ($this->data->get('_programType') != 0 && $this->data->get('_qrCode') != "") {
-            debug('semmi se üres');
             $code = $this->qrService->checkByHash($this->data->get('_qrCode'));
             if ($code) {
                 $result = $this->qrService->createAccessQRCode($this->data->all());

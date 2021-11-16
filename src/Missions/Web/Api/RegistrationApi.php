@@ -18,7 +18,6 @@ class RegistrationApi extends Api
     {
         try
         {
-            //
             $student = $this->studentService->create($this->data->all());
             $this->emailService->create($student);
         }catch (ValidationError $error)

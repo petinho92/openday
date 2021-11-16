@@ -14,7 +14,7 @@ class QRcodeApi extends Api
     #[Route(self::GET, '/qr/:code(MIK51-[o][a-z]*-[0-9]+-[0-9a-zA-Z]*)')]
     public function qrGet(string $code)
     {
-        //MIK51-student-263-5be164ef006b27adc41690096165fee5
+        //MIK51-openday-263-5be164ef006b27adc41690096165fee5
         $result = $this->qrService->checkByHash($code);
         if($result){
             return $code;

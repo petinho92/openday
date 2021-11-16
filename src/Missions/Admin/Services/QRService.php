@@ -13,7 +13,6 @@ class QRService
     public function checkByHash($code)
     {
         if(preg_match('(MIK51-[o][a-z]*-[0-9]+-[0-9a-zA-Z]*)', $code)){
-            debug('match');
             $data = explode("-", $code);
             if ($data[1] === 'openday') {
                 if ($this->studentService->checkByHash($data[2], $data[3])) {
@@ -23,7 +22,6 @@ class QRService
                 }
             }
         }
-        debug('no match');
         return false;
     }
 

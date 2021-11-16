@@ -16,7 +16,6 @@ class StudentService
     public function create(array $input): Student
     {
         $student = Student::create();
-        debug($input);
         $student->name = $input['_name'];
         $trans = array(
             'À' => 'A', 'Á' => 'A', 'Â' => 'A', 'Ã' => 'A', 'Ä' => 'A', 'Å' => 'A', 'Ç' => 'C', 'È' => 'E',

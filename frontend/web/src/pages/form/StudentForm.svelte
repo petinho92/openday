@@ -1,6 +1,7 @@
 <script>
     import {Button} from 'svelma';
     import StudentsFormData from "src/application/formData/student.ts";
+    import {schoolType, city, school, list, schoolss} from "src/application/services/studentStore";
     import {schooltypes} from "src/application/statData/schools.ts";
     import {majors} from "src/application/statData/majors.ts";
     import {wherehear, whohelpyou} from "src/application/statData/stats.ts";
@@ -11,63 +12,58 @@
     import ComboBox from "src/pages/elements/ComboBox.svelte";
     import CheckboxField from "src/pages/elements/CheckboxField.svelte";
     import {active} from "src/application/services/stores.ts";
+
     let formData = new StudentsFormData();
-    let list = [];
-    let schoolss = [];
     let privacy;
     let covid;
-    // let active = false;
-
 
     function sendData() {
+        formData.schooltype = $schoolType.name;
+        formData.city = $city.city;
+        formData.school = $school.value;
         hirundinidae(formData);
     }
-
-    function updateBoxes(){
-        formData.city = "";
-        formData.school = "";
-        list.pop();
-        schoolss.pop();
-
+    function handleCheckboxMajor(event) {
+    }
+    function handleWhereHear(event) {
     }
 
-    function handleSelectSchoolType(event){
-
-        formData.schooltype = event.detail.selected.name;
-        list = selectorSchoolType(formData.schooltype);
+    function handleWhoHelp(event) {
     }
-
-    function handleSelectCity(event){
-        formData.city = event.detail.selected.city;
-        schoolss = event.detail.selected.schools;
+    function changeSchoolType(event){
+        $list = [];
+        $schoolss = [];
+        $school = "";
+        $city = "";
+        $list = selectorSchoolType($schoolType.name);
     }
-
-    function handleSelectSchool(event){
-        formData.school = event.detail.selected.value;
+    function changeCity(event){
+        $school = "";
+        $schoolss = event.detail.selected.schools;
     }
-
-    function handleCheckboxMajor(event){}
-    function handleWhereHear(event){}
-    function handleWhoHelp(event){}
-
 </script>
 
 <div class="container is-max-desktop mt-6 cont">
     <div class="tile is-parent">
         <div class="tile is-child box formcolor">
             <p class="title has-text-centered">Regisztráció</p>
-
             <div class="is-divider is-info" data-content="Személyes adatok"></div>
-
-            <InputField placeholder="Név" label="Név" needIcon={true} require={true} bind:value={formData.name} iconTag="fas fa-user"/>
-            <InputField placeholder="example@example.com" label="Email" require={true} needIcon={true} iconTag="fas fa-envelope" bind:value={formData.email}/>
-            <ComboBox label="Intézmény típusa" require={true} collection={schooltypes} optionIdentifier="name" labelIdentifier="name" on:message={handleSelectSchoolType}/>
-            <ComboBox label="Város" require={true} labelIdentifier="city" optionIdentifier="city" collection={list} on:message={handleSelectCity} />
-            <ComboBox require={true} optionIdentifier="value" labelIdentifier="value" label="Intézmény" collection={schoolss} on:message={handleSelectSchool}/>
-            <CheckboxField on:change={handleCheckboxMajor} bind:selected={formData.major} items={majors} label="Mely képzésein érdekelnek?" require={true}/>
-            <CheckboxField on:change={handleWhereHear} bind:selected={formData.wherehear} items={wherehear} label="Hol szereztél tudomást a nyílt napról?" require={true}/>
-            <CheckboxField on:change={handleWhoHelp} bind:selected={formData.whohelps} items={whohelpyou} label="Ki segít a felvételi döntésedben?" require={true} />
-
+            <InputField placeholder="Név" label="Név" needIcon={true} require={true} bind:value={formData.name}
+                        iconTag="fas fa-user"/>
+            <InputField placeholder="example@example.com" label="Email" require={true} needIcon={true}
+                        iconTag="fas fa-envelope" bind:value={formData.email}/>
+            <ComboBox label="Intézmény típusa" require={true} collection={schooltypes} optionIdentifier="name"
+                      labelIdentifier="name" bind:value={$schoolType} on:message={changeSchoolType}/>
+            <ComboBox label="Város" require={true} labelIdentifier="city" optionIdentifier="city" collection={$list}
+                      bind:value={$city} on:message={changeCity}/>
+            <ComboBox require={true} optionIdentifier="value" labelIdentifier="value" label="Intézmény"
+                      collection={$schoolss} bind:value={$school}/>
+            <CheckboxField on:change={handleCheckboxMajor} bind:selected={formData.major} items={majors}
+                           label="Mely képzésein érdekelnek?" require={true}/>
+            <CheckboxField on:change={handleWhereHear} bind:selected={formData.wherehear} items={wherehear}
+                           label="Hol szereztél tudomást a nyílt napról?" require={true}/>
+            <CheckboxField on:change={handleWhoHelp} bind:selected={formData.whohelps} items={whohelpyou}
+                           label="Ki segít a felvételi döntésedben?" require={true}/>
             <br>
             <label class="checkbox has-text-left-mobile">
                 <br><input type="checkbox" bind:checked={covid}>
@@ -84,23 +80,8 @@
                 <Button type="is-info" on:click={sendData} disabled={!privacy | !covid}>Regisztrálok</Button>
             </div>
         </div>
-
-
     </div>
-
-
 </div>
-
-<style lang="css">
-    /*.cont {*/
-    /*    background-color: #dce2ee;*/
-    /*}*/
-
-    /*.formcolor {*/
-    /*    background-color: rgba(179, 192, 250, 0.68);*/
-    /*}*/
-</style>
-
 
 <ModalCard bind:active={$active} title="Sikeres regisztráció">
     <div class="modal-card-body">

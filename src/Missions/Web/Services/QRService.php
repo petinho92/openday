@@ -13,7 +13,6 @@ class QRService
         //MIK51-openday-11-36cb21813152512ab8962874d5b1ba68
         if(preg_match('(MIK51-[o][a-z]*-[0-9]+-[0-9a-zA-Z]*)', $code))
         {
-            debug('match');
             $data = explode("-", $code);
             if($data[1] === 'openday')
             {
@@ -24,7 +23,6 @@ class QRService
                     return false;
                 }
             }
-            debug('no match');
             return false;
         }
     }

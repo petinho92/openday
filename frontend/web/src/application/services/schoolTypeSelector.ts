@@ -1,4 +1,5 @@
 import {gimnazium, szakiskola, szakkozepiskola, szakgimnazium, egyetem, foiskola,technikum} from "src/application/statData/schools";
+
 let list = Array();
 export default function selectorSchoolType(input: string){
         if (input === "gimnázium") {

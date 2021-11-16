@@ -1,7 +1,7 @@
 import StudentsFormData from "src/application/formData/student.ts";
 import handleFetch from "src/application/services/handle-fetch";
 import {active} from "src/application/services/stores";
-import GuestFormData from "src/application/formData/guest";
+import GuestFormData from "src/application/formData/guest.ts";
 
 
 export function hirundinidae(input: StudentsFormData){

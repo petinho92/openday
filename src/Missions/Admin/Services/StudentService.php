@@ -2,7 +2,6 @@
 
 use Application\Entity\Student;
 use Atomino\Carbon\Database\Finder\Filter;
-use function Atomino\debug;
 
 class StudentService
 {

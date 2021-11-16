@@ -3,7 +3,6 @@
 use Application\Missions\Admin\Services\StudentService;
 use Atomino\Mercury\Responder\Api\Api;
 use Atomino\Mercury\Responder\Api\Attributes\Route;
-use function Atomino\debug;
 
 class StatApi extends Api
 {
@@ -14,8 +13,6 @@ class StatApi extends Api
     #[Route(self::GET, '/getList')]
     public function getList()
     {
-        $alma = "teszt";
-        debug(password_hash($alma, PASSWORD_BCRYPT));
         return $this->studentService->getAll();
 
     }
