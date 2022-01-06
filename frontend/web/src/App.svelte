@@ -20,15 +20,14 @@
     body{
         min-height: 100%;
         background-color: #f3f2f2;
-
-
     }
     @media only screen and (min-width: 768px) {
         body {
-            background-image: url("/~web/images/bg1.jpg");
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
+            /*background-image: url("/~web/images/bg1.jpg");*/
+            /*background-repeat: no-repeat;*/
+            /*background-attachment: fixed;*/
+            /*background-size: cover;*/
+         background-color: #34495e;
         }
     }
     @media only screen and (max-width: 767px) {

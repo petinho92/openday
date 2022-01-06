@@ -17,7 +17,7 @@
             </div>
         </div>
 
-        <div class="navbar-menu backcolor" id="navbar-menu">
+        <div class="navbar-menu backcolor" id="navbar-menu" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
             <a class="navbar-item linkcolor"
                on:click={ () => push("/programs")}>
                 Programok
