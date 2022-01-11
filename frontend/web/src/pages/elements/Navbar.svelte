@@ -1,66 +1,136 @@
-<script lang="ts">
+<script>
     import {push} from 'svelte-spa-router';
 </script>
 
-<nav class="navbar is-fixed-top color" role="navigation" aria-label="main navigation" id="navbar">
-    <div class="container">
-        <div class="navbar-brand">
-            <a class="navbar-item"
-               on:click={ () => push("/")}>
-                <img src="/~web/images/mik51_white.png" alt="home" width="90" height="40">
-            </a>
-            <div class="navbar-burger burgercolor" data-target="navbar-menu"
-                 onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
-                <span></span>
-                <span></span>
-                <span></span>
+<div class="columns">
+    <div class="column is-12">
+        <div class="card">
+            <div class="card-content">
+                <nav class="navbar is-transparent has-centered-logo-alt2" role="navigation"
+                     aria-label="main navigation">
+                    <div class="navbar-brand is-hidden-desktop">
+                        <a class="navbar-item" on:click={ () => push("/")}>
+                            <img src="/~web/images/mik51_white.png" width="60" height="30">
+                        </a>
+                        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                           data-target="navbarBasicExample"
+                           onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+                            <span aria-hidden="true" class="nbburger"></span>
+                            <span aria-hidden="true" class="nbburger"></span>
+                            <span aria-hidden="true" class="nbburger"></span>
+                        </a>
+                    </div>
+                    <div id="navbarBasicExample" class="navbar-menu">
+
+                        <div class="navbar-brand is-hidden-touch imagee">
+                            <a class="navbar-item" on:click={ () => push("/")}>
+                                <figure><img src="/~web/images/mik51_white.png" class="imageee" width="170" height="5"></figure>
+                            </a>
+                            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                               data-target="navbarBasicExample"
+                               onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+                                <span aria-hidden="true" class="nbburger"></span>
+                                <span aria-hidden="true" class="nbburger"></span>
+                                <span aria-hidden="true" class="nbburger"></span>
+                            </a>
+                        </div>
+
+                        <div class="navbar-start" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+                            <a class="navbar-item nbi" on:click={() => push('/programs')}>
+                                Programok
+                            </a>
+                            <div class="navbar-item has-dropdown is-hoverable">
+                                <a class="navbar-link nbi">
+                                    Regisztráció
+                                </a>
+                                <div class="navbar-dropdown">
+                                    <a class="navbar-item dditem" on:click={ () => push("/student")}>
+                                        Diákoknak
+                                    </a>
+                                    <hr class="navbar-divider">
+                                    <a class="navbar-item dditem" on:click={ () => push("/guest")}>
+                                        Kísérőknek
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </div>
-
-        <div class="navbar-menu backcolor" id="navbar-menu" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
-            <a class="navbar-item linkcolor"
-               on:click={ () => push("/programs")}>
-                Programok
-            </a>
-            <a class="navbar-item linkcolor"
-               on:click={ () => push("/student")}>
-                Diákoknak
-            </a>
-            <a class="navbar-item linkcolor"
-               on:click={ () => push("/guest")}>
-                Kísérőknek
-            </a>
-        </div>
     </div>
-</nav>
+</div>
+
 
 <style>
-    @media only screen and (min-width: 601px) {
-        .backcolor {
+
+    .navbar.has-centered-logo-alt2 .navbar-menu {
+        flex-wrap: wrap;
+    }
+
+    .navbar.has-centered-logo-alt2 .navbar-start,
+    .navbar.has-centered-logo-alt2 .navbar-end {
+        flex: 1 1 0;
+    }
+
+    .navbar.has-centered-logo-alt2 .navbar-wide.navbar-start {
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+    .dditem{
+        color: black;
+    }
+    .card {
+        background-color: #1a2b50;
+    }
+
+    .navbar {
+        background-color: #1a2b50;
+    }
+
+    .columns {
+        background-color: #1a2b50;
+    }
+
+    .card-content {
+        color: #F4F3EA;
+        text-space: 2px;
+        font-weight: bold;
+        font-size: 1.25em;
+    }
+
+    @media screen and (min-width: 1023px){
+        .nbi{
+            color: #F4F3EA;
+        }
+
+        .nbi:hover{
+            color: #9bb0cb;
+            transition: color 1s;
+        }
+    }
+    @media screen and (max-width: 768px){
+        .nbi{
             color: black;
         }
-
-        .linkcolor {
-            color: white;
-        }
     }
 
-    @media only screen and (max-width: 1023px) {
-        .linkcolor {
-            color: black;
-        }
-    }
-    @media only screen and (max-width: 600px) {
-        .backcolor {
-            color: #eeeeee;
-        }
+    .nbburger{
+        color: #F4F3EA;
     }
 
-    .color {
-        background-color: #101b33;
+
+    .navbar-menu{
+        max-width: 95vw;
     }
 
-    .burgercolor {
-        color: white;
+    .navbar-menu{
+        animation: navAnimOpen .2s ease-in-out;
+    }
+
+    @keyframes navAnimOpen {
+        0% {display: none;opacity: 0;max-height: 0;}
+        1% {display: block;opacity: 0;}
+        100% {opacity: 1;max-height: 396px;}
     }
 </style>

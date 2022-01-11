@@ -15,11 +15,11 @@
 <style lang="css" global>
     html{
         height: 100%;
-        background-color: #f3f2f2;
+        /*background-color: #f3f2f2;*/
     }
     body{
         min-height: 100%;
-        background-color: #f3f2f2;
+        /*background-color: #f3f2f2;*/
     }
     @media only screen and (min-width: 768px) {
         body {

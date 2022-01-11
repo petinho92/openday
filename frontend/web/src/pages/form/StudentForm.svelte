@@ -59,7 +59,7 @@
             <ComboBox require={true} optionIdentifier="value" labelIdentifier="value" label="Intézmény"
                       collection={$schoolss} bind:value={$school}/>
             <CheckboxField on:change={handleCheckboxMajor} bind:selected={formData.major} items={majors}
-                           label="Mely képzésein érdekelnek?" require={true}/>
+                           label="Mely képzéseink érdekelnek?" require={true}/>
             <CheckboxField on:change={handleWhereHear} bind:selected={formData.wherehear} items={wherehear}
                            label="Hol szereztél tudomást a nyílt napról?" require={true}/>
             <CheckboxField on:change={handleWhoHelp} bind:selected={formData.whohelps} items={whohelpyou}
@@ -79,6 +79,7 @@
             <div class="field mt-4">
                 <Button type="is-info" on:click={sendData} disabled={!privacy | !covid}>Regisztrálok</Button>
             </div>
+            <p class="comment">Amennyiben nem találod intézményed a fenti listában, írj a <a href="mailto:marketing@mik.pte.hu">marketing@mik.pte.hu</a> email címre az iskolád és városod megnevezésével és segítünk.</p>
         </div>
     </div>
 </div>
@@ -91,3 +92,11 @@
         <p></p>
     </div>
 </ModalCard>
+
+
+<style>
+    .comment{
+        padding-top: 30px;
+        font-size: 12px;
+    }
+</style>

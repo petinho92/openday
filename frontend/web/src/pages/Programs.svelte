@@ -14,61 +14,81 @@
                     <td>Időpont</td>
                     <td>Program neve</td>
                     <td>Helyszín</td>
+                    <td>Felkért oktató</td>
                 </tr>
                 </thead>
                 <tr>
                     <td>8:30-9:30</td>
                     <td><b>Regisztráció</b></td>
                     <td>Aula</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>9:30-9:40</td>
                     <td><b>Köszöntő</b></td>
                     <td>A010</td>
+                    <td>Prof. Dr. Medvegy Gabriella</td>
                 </tr>
                 <tr>
                     <td>9:40-9:50</td>
                     <td><b>Duális képzés bemutatása</b></td>
                     <td>A010</td>
+                    <td>Vasvári Gyula Ferenc</td>
                 </tr>
                 <tr>
                     <td>9.50-10.00</td>
                     <td><b>Rövid tájékoztató a programokról, MIK hallgatói szemmel</b></td>
                     <td>A010</td>
+                    <td>Kovács Norbert</td>
+
                 </tr>
                 <tr>
                     <td>10:00-13:00</td>
                     <td><b>Folyamatos programok</b></td>
                     <td></td>
+                    <td></td>
+
                 </tr>
                 <tr>
                     <td>12:00-13:00</td>
                     <td><b>Nyitott laborok - melyik látogatható?</b></td>
+                    <td></td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>10:15-12:45</td>
                     <td><b>Szakos tájékoztatók</b></td>
                     <td></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>10:00-13:00</td>
                     <td><b>Egyéb tájékoztatók</b></td>
+                    <td></td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>10:00-13:00</td>
                     <td><b>Bemutatkoznak a Duális Partnereink</b></td>
                     <td>Aula</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>13:00-13:30</td>
                     <td><b>3D Központ látogatás I. turnus</b></td>
                     <td></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>13:30-14:00</td>
                     <td><b>3D Központ látogatás II. turnus</b></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14:00-14:30</td>
+                    <td><b>3D Központ látogatás III. turnus</b></td>
+                    <td></td>
                     <td></td>
                 </tr>
             </table>
@@ -90,14 +110,14 @@
                 </tr>
                 </thead>
                 <tr>
+                    <td>3D nyomtató bemutatása</td>
+                    <td>Aula</td>
+                    <td>Vasvári Gyula Ferenc, Csonka Dávid</td>
+                </tr>
+                <tr>
                     <td>Termikus mérőbábu, hőkamera, mérőkabin</td>
                     <td>Aula</td>
                     <td>Loch Gábor, Budulski László, Reisz Viktor</td>
-                </tr>
-                <tr>
-                    <td>Szerkezeti játékok</td>
-                    <td>Aula</td>
-                    <td></td>
                 </tr>
                 <tr>
                     <td>Építész alkotóhéten készült kompozíciók</td>
@@ -112,7 +132,7 @@
                 <tr>
                     <td>Automatikai játék</td>
                     <td>villamos folyosó</td>
-                    <td></td>
+                    <td>Elter Patrik</td>
                 </tr>
                 <tr>
                     <td>Egy szusszal a helyére - Pneumatikus játék</td>
@@ -125,11 +145,6 @@
                     <td>Dr. Sári Zoltán, Müller Péter</td>
                 </tr>
                 <tr>
-                    <td>3D nyomtatás</td>
-                    <td>A007</td>
-                    <td>Szeledi Ákos</td>
-                </tr>
-                <tr>
                     <td>Formatervezett bútorok kiállítása</td>
                     <td>Aula</td>
                     <td>Dr. Vasváry-Nádor Norbert + hallgatók</td>
@@ -140,16 +155,20 @@
                     <td>Dr. Vasváry-Nádor Norbert + hallgatók</td>
                 </tr>
                 <tr>
-                    <td>Zajszint mérő</td>
+                    <td>Zajszint mérés; víztisztítás, szennyvízkezelés lehetőségei</td>
                     <td>Aula</td>
-                    <td>Dr. Németh Pál, Dr. Krámli Márta, Tomcsik Judit</td>
+                    <td>Pataki Tamás, Dr. Pécz Tibor, Vízvári Zoltán</td>
                 </tr>
                 <tr>
                     <td>Válogatás az építészeti rajz kurzusok anyagaiból</td>
                     <td>Aula</td>
                     <td>Dr. Németh Pál, Dr. Krámli Márta, Tomcsik Judit</td>
                 </tr>
-
+                <tr>
+                    <td>Pneumobil kipróbálása</td>
+                    <td>Sportpálya (időjárás függvénye)</td>
+                    <td>Malkó Tibor</td>
+                </tr>
             </table>
         </div>
     </CollapsibleSection>
@@ -170,7 +189,7 @@
                     <td>Dr. Vasváry-Nádor Norbert</td>
                 </tr>
                 <tr>
-                    <td>Szerkezetdiagnosztizáló labor</td>
+                    <td>Szerkezetdiagnosztizáló labor, szerkezeti játékok</td>
                     <td>C0040</td>
                     <td>Kárpáti Kinga</td>
                 </tr>
@@ -190,11 +209,6 @@
                     <td>Cvenits Ákos</td>
                 </tr>
                 <tr>
-                    <td>Mérőkabin</td>
-                    <td>C032</td>
-                    <td>Reisz Viktor</td>
-                </tr>
-                <tr>
                     <td>Plüssállatka szakító vizsgálatok</td>
                     <td>C0047</td>
                     <td>Told Roland, Zsebe Tamás</td>
@@ -203,37 +217,37 @@
                     <td>Környezetvédelmi méréstechnikai laborok, gyökérzónás szennyvíztisztító kutatótelep bemutatása
                     </td>
                     <td>C003-C006</td>
-                    <td>Pataki Tamás, Varga Zsolt, Somfai Dávid, Dolgosné dr. Kovács Anita</td>
+                    <td>Varga Zsolt, Somfai Dávid, Dolgosné dr. Kovács Anita</td>
                 </tr>
                 <tr>
                     <td>CISCO, EIB labor</td>
                     <td>B225-B226</td>
-                    <td></td>
+                    <td>Elter Patrik</td>
                 </tr>
                 <tr>
                     <td>FESTO labor</td>
                     <td>B0022</td>
-                    <td></td>
+                    <td>Elter Patrik</td>
                 </tr>
                 <tr>
                     <td>Villamos gépek labor</td>
                     <td>B0024</td>
-                    <td></td>
+                    <td>Elter Patrik</td>
                 </tr>
                 <tr>
                     <td>Méréstechnika</td>
                     <td>B0028</td>
-                    <td></td>
+                    <td>Elter Patrik</td>
                 </tr>
                 <tr>
                     <td>Elektronika labor</td>
                     <td>B0027</td>
-                    <td></td>
+                    <td>Elter Patrik</td>
                 </tr>
                 <tr>
                     <td>PLC labor</td>
                     <td>B0029</td>
-                    <td></td>
+                    <td>Elter Patrik</td>
                 </tr>
             </table>
         </div>
@@ -273,7 +287,7 @@
                 </tr>
                 </thead>
                 <tr><td>Tanulmányi csoport</td><td>Aula</td><td>Kukai Annamária</td></tr>
-                <tr><td>Műszaki szaknyelvi központ</td><td>Aula</td><td>Poór Kinga</td></tr>
+                <tr><td>Műszaki szaknyelvi központ</td><td>Aula</td><td>Ninkné Poór Kinga</td></tr>
                 <tr><td>HÖK</td><td>infopult</td><td>Kovács Norbert</td></tr>
                 <tr><td>Mentor Klubot működtető oktatók és hallgatók előadása</td><td>Aula</td><td>Martonné Gyurász Zsuzsanna</td></tr>
                 <tr><td>b2 Szakkollégium</td><td>Aula</td><td>Rácz Viktor</td></tr>

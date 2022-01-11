@@ -14,7 +14,7 @@
                     programokkal várunk minden kedves látogatót.</p>
             </div>
             <div class="column">
-                <img src="https://mik.pte.hu/images/news_gallery/5/3/6/3/20191206-nyiltnap-072-191210155625.jpg"
+                <img src="/~web/images/main_pics.jpg"
                      alt="kep">
             </div>
         </div>
