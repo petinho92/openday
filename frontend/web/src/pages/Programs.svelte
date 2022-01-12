@@ -140,9 +140,9 @@
                     <td>Malkó Tibor</td>
                 </tr>
                 <tr>
-                    <td>Kiberbiztonság, ember-gép kapcsolati interfészen alapuló játékok, alkalmazások</td>
+                    <td>Kiberbiztonság, ember-gép kapcsolati interfészek, <b>"Ez a programozás" </b> című előadás</td>
                     <td>A007</td>
-                    <td>Dr. Sári Zoltán, Müller Péter</td>
+                    <td>Dr. Sári Zoltán, Müller Péter, Laborci Gergely</td>
                 </tr>
                 <tr>
                     <td>Formatervezett bútorok kiállítása</td>
@@ -183,6 +183,11 @@
                     <td>Oktató</td>
                 </tr>
                 </thead>
+                <tr>
+                    <td>Hálózati- és informatikabiztonság labor</td>
+                    <td>A214</td>
+                    <td>Gyurák Gábor</td>
+                </tr>
                 <tr>
                     <td>ITF Stúdio</td>
                     <td>C0027</td>
