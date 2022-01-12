@@ -10,7 +10,7 @@
                      aria-label="main navigation">
                     <div class="navbar-brand is-hidden-desktop">
                         <a class="navbar-item" on:click={ () => push("/")}>
-                            <img src="/~web/images/mik51_white.png" width="60" height="30">
+                            <img src="/~web/images/mik51_white.png" class="imageee">
                         </a>
                         <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
                            data-target="navbarBasicExample"
@@ -24,7 +24,7 @@
 
                         <div class="navbar-brand is-hidden-touch imagee">
                             <a class="navbar-item" on:click={ () => push("/")}>
-                                <figure><img src="/~web/images/mik51_white.png" class="imageee" width="170" height="5"></figure>
+                                <figure><img src="/~web/images/mik51_white.png" class="imageee"></figure>
                             </a>
                             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
                                data-target="navbarBasicExample"
@@ -119,7 +119,10 @@
         color: #F4F3EA;
     }
 
-
+    .imageee{
+        height: 80%;
+        width: 80%;
+    }
     .navbar-menu{
         max-width: 95vw;
     }
