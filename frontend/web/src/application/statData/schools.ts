@@ -760,7 +760,7 @@ export let technikum = [
     {city: "Vásárosnamény", schools: ["Beregi Általános Iskola, Gimnázium és Technikum"]},
     {city: "Veszprém", schools: ["Padányi Biró Márton Római Katolikus Gimnázium, Technikum és Általános Iskola","Veszprémi SZC 'SÉF' Vendéglátás-Turizmus Technikum és Szakképző Iskola","Veszprémi SZC Bethlen István Közgazdasági és Közigazgatási Technikum","Veszprémi SZC Ipari Technikum","Veszprémi SZC Jendrassik-Venesz Technikum","Veszprémi SZC Táncsics Mihály Technikum"]},
     {city: "Záhony", schools: ["Kisvárdai SZC Kandó Kálmán Technikum és Dr. Béres József Kollégium"]},
-    {city: "Zalaegerszeg", schools: ["Zalaegerszegi SZC Báthory István Technikum","Zalaegerszegi SZC Csány László Technikum","Zalaegerszegi SZC Deák Ferenc Technikum","Zalaegerszegi SZC Ganz Ábrahám Technikum","Zalaegerszegi SZC Ganz Ábrahám Technikum"]},
+    {city: "Zalaegerszeg", schools: ["Zalaegerszegi SZC Báthory István Technikum","Zalaegerszegi SZC Csány László Technikum","Zalaegerszegi SZC Deák Ferenc Technikum","Zalaegerszegi SZC Ganz Ábrahám Technikum","Zalaegerszegi SZC Széchenyi István Technikum"]},
     {city: "Zánka", schools: ["Pápai SZC Egry József Technikum, Szakképző Iskola és Kollégium"]}
 ];
 
