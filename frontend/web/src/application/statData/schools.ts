@@ -702,6 +702,7 @@ export let technikum = [
     },
     {city: "Orosháza", schools: ["Gyulai SZC Kossuth Lajos Technikum, Szakképző Iskola és Kollégium"]},
     {city: "Ózd", schools: ["Ózdi SZC Bródy Imre Technikum","Ózdi SZC Gábor Áron Technikum és Szakképző Iskola"]},
+    {city: "Paks", schools: ["Energetikai Technikum és Kollégium"]},
     {city: "Pápa", schools: ["Pápai SZC Acsády Ignác Technikum és Szakképző Iskola","Pápai SZC Jókai Mór Közgazdasági Technikum és Kollégium"]},
     {
         city: "Pécs",

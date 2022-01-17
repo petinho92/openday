@@ -115,6 +115,11 @@
                     <td>Vasvári Gyula Ferenc, Csonka Dávid</td>
                 </tr>
                 <tr>
+                    <td>VR bemutató és drón kiállítás</td>
+                    <td>Büfé melletti terület</td>
+                    <td>Dr. Zagorácz Márk adjunktus</td>
+                </tr>
+                <tr>
                     <td>Termikus mérőbábu, hőkamera, mérőkabin</td>
                     <td>Aula</td>
                     <td>Loch Gábor, Budulski László, Reisz Viktor</td>
@@ -153,6 +158,11 @@
                     <td>Bemutató formatervező hallgatók munkáiból, MiMIKe síkból térbe való megformálása</td>
                     <td>Aula</td>
                     <td>Dr. Vasváry-Nádor Norbert + hallgatók</td>
+                </tr>
+                <tr>
+                    <td>Pályaorientációs kérdőív</td>
+                    <td>Aula</td>
+                    <td>Mang Zita</td>
                 </tr>
                 <tr>
                     <td>Zajszint mérés; víztisztítás, szennyvízkezelés lehetőségei</td>
