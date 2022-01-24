@@ -219,7 +219,7 @@
                     <td>Gadó Béla</td>
                 </tr>
                 <tr>
-                    <td>Forgácsoló üzem megtekintése, fogaskerék fogazás bemutatása</td>
+                    <td>Forgácsoló üzem megtekintése, CNC megmunkálás</td>
                     <td>G56</td>
                     <td>Cvenits Ákos</td>
                 </tr>
